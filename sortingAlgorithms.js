@@ -1,5 +1,6 @@
+//Comparison Sorts
 //O(n^2)
-function bubble(a)
+function bubble(a) //stable
 {
     let n=a.length;
     let temp;
@@ -19,7 +20,7 @@ function bubble(a)
         console.log(a);
 }
 
-function selection(a)
+function selection(a) //unstable
 {
     let n=a.length;
     let min,temp;
@@ -38,7 +39,7 @@ function selection(a)
      console.log(a);
 }
 
-function insertion(a)
+function insertion(a) //stable
 {
     let n=a.length;
     let temp=0;
@@ -70,6 +71,13 @@ function insertion(a)
     } 
     console.log(a)  
 }
+
+// function insertion_pairWiseSwap(a)
+// {
+
+// }
+
+
 //O(nlogn)
 // function merge(a)
 // {
@@ -89,3 +97,6 @@ const a=[5,2,6,3,8,9,7,1,4];
 bubble(a)
 selection(a)
 insertion(a)
+
+//Non Comparison sort
+//Radix & Bucket
