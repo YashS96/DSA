@@ -92,7 +92,7 @@ class DoublyLinkedList{
         this.head.previous=null;
         current.next=null;
     }
-
+ 
     deleteLast=()=>{
         let current=this.head;
         while(current){

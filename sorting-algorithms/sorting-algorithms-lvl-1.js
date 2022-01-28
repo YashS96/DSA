@@ -1,5 +1,5 @@
 //Comparison Sorts
-//O(n^2)
+//O(n^2) 
 function bubble(a) //stable
 {
     let n=a.length;
