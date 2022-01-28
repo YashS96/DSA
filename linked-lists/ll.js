@@ -4,7 +4,7 @@ function node(value){
     this.data=value;
     this.next=null;
 }
-
+ 
 class LinkedList{
     constructor(){
         this.head=null;//this->ll
@@ -111,20 +111,26 @@ class LinkedList{
         }
     }
 
-
     // deleteAtIndex=()=>{
 
     // }
 
-    // 2->3->32->122->324
-    // deleteAlternate=()=>{
-
+    // 2->3->32->122->324->6
+    // deleteAlternateOdd=()=>{
+    //     let current=this.head;
+    //     let remove=current;
+    //     while(current && remove){
+    //         remove=remove.next;
+    //         current.next=current.next.next;
+    //         remove.next=null;
+    //         remove=current;
+    //         //current=current.next;
+    //     }
     // }
 
     // sort=()=>{ // Insertion sort
 
     // }
-
 
 }
 
@@ -142,6 +148,4 @@ ll.reverse();
 ll.traverse();
 ll.deleteLast();
 ll.traverse();
-ll.deleteAlternate()//odd for now
-
-
+ll.deleteAlternateOdd();
