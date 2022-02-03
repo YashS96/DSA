@@ -134,6 +134,9 @@ class LinkedList{
 
 }
 
+// for(let i=0;i<5;i++)
+//     ll.insertLast(i)
+
 let ll=new LinkedList();
 ll.insertLast(13);
 ll.insertLast(5);

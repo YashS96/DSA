@@ -55,16 +55,16 @@ class DoublyLinkedList{
                     this.head=x;
                     break;
                 }
-            current=current.previous;
-        }
+                current=current.previous;
+            }
             
+        }
+        this.size++;
     }
-    this.size++;
-}
-    insertAtindex(value){
-        let x=new node(value);
+    // insertAtindex(value){
+    //     let x=new node(value);
         
-    }
+    // }
     reverse(){
         let current,tail
         current=tail=this.head;
@@ -160,6 +160,7 @@ dll.insertLast(693)
 dll.insertLast(433)
 dll.insertFirst(22)
 dll.insertFirst(11)
+//dll.insertAtindex(4444,0)
 dll.traverse()
 dll.reverse()
 dll.deleteFirst()
