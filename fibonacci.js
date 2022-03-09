@@ -17,8 +17,10 @@ for(let i=0;i<n-1;i++){
     arr+=' ';
  }
  console.log(arr);
-}
+ //fibonacci(10);
 
+}
+// Try using less parameters
 refibronacci=(n,i,arr,sum,t1,t2)=>{
     i++;
     if(n==i)
@@ -29,6 +31,24 @@ refibronacci=(n,i,arr,sum,t1,t2)=>{
     refibronacci(n,i,arr,sum,t2,sum);
 }
 
+//refibronacci(10,0,1,0,0,1);
 
-//fibonacci(10);
-refibronacci(10,0,1,0,0,1);
+function fibonacciRecursive(n,index,a){
+
+        if(index == n){
+            //console.log(a)
+            return a; 
+        }
+       
+        if(index == 0  || index == 1) 
+            a.push(1)
+        else{
+            let sum=parseInt(a[index-1]) + parseInt(a[index-2]);
+            a.push(sum)
+        }
+        index+=1
+        //console.log(a)
+        return fibonacciRecursive(n, index, a)
+}
+
+console.log(fibonacciRecursive(8,0,[]))
