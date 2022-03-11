@@ -71,12 +71,37 @@ function insertion(a) //stable
     } 
     console.log(a)  
 }
+// More intuitive
+//create a sorted array as we go by, when encouter an out of order entry, swap it till you get in the correct order 
+function insertion_pairWiseSwap(a)
+{
+    let j=0;let k=0;let l=0;let flag=false;
+    for(let i=0;i<a.length;i++){
+        j=i+1;
 
-// function insertion_pairWiseSwap(a)
-// {
+        if(a[j] >= a[i])
+            continue;
+        else{
+           while(flag != true){
+                k=j-1;l=j;
 
-// }
+                if(a[l] <= a[k]){
+                    let temp =a[k];
+                    a[k]=a[l];
+                    a[l]=temp;
+                }
+                else flag=true;
 
+                k--;l--;
+            }
+        }
+        j++;
+    }
+    console.log(a)
+
+}
+a=[7,6,2,1,4,3,5,8]
 bubble(a)
 selection(a)
 insertion(a)
+insertion_pairWiseSwap(a)
